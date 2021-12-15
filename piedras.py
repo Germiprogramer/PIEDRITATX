@@ -43,7 +43,18 @@ while True:
         turno = 1
     elif turno == 1:
         print("Es el turno del jugador 2")
-        quitarpiedras(NUMERODEPIEDRAS,n)
+        piedrasfuera = int(input("ELIGE CUANTAS PIEDRAS QUIERES QUITAR: 2,3 o 5>>> "))
+        if piedrasfuera == 2:
+            NUMERODEPIEDRAS = NUMERODEPIEDRAS - 2
+            print("Tenemos {} piedras".format(NUMERODEPIEDRAS))
+        elif piedrasfuera == 3:
+            NUMERODEPIEDRAS = NUMERODEPIEDRAS - 3
+            print("Tenemos {} piedras".format(NUMERODEPIEDRAS))
+        elif piedrasfuera == 5:
+            NUMERODEPIEDRAS = NUMERODEPIEDRAS - 5
+            print("Tenemos {} piedras".format(NUMERODEPIEDRAS))
+        else:
+            print("GERMANGILIPOLLAS")
         turno = 0
 
 

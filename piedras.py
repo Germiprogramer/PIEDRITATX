@@ -17,15 +17,12 @@ def accionIA(NUMERODEPIEDRAS, piedrasfuera):
     elif NUMERODEPIEDRAS == 6:
         piedrasfuera = 5
     elif NUMERODEPIEDRAS >= 7:
-        resto = NUMERODEPIEDRAS % 7
-        if (resto>= 2 and resto<=3):
-            piedrasfuera = 2
-        elif resto == 4:
-            piedrasfuera = 3
-        elif (resto >= 5 and resto <=6):
-            piedrasfuera = 6
-        else:
-            pass
+         while True:
+            piedrasfuera = randint(2,5)
+            if piedrasfuera == 4:
+                pass
+            else:
+                break
     return piedrasfuera
         
 turno = "jugador1"
